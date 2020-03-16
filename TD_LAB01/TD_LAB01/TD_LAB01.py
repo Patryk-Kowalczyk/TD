@@ -67,9 +67,10 @@ def showFunction(functionName, begin, step, end, function, saveGraphToFile=False
     plt.plot(X,FX,'r.')
     plt.xlabel('t[s]')
     plt.ylabel(functionName+'(t)')
-    plt.show()
     if saveGraphToFile:
-        plt.savefig('./results/'+functionName+'.png')
+        plt.savefig(str('../results/'+functionName+'.png'))
+    plt.show()
+    
 
 check()
 step = 1/22050
