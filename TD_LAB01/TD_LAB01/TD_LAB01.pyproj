@@ -11,6 +11,7 @@
     <OutputPath>.</OutputPath>
     <Name>TD_LAB01</Name>
     <RootNamespace>TD_LAB01</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda37-64</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +23,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="TD_LAB01.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda37-64" />
+    <InterpreterReference Include="Global|PythonCore|3.8" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
